@@ -18,6 +18,11 @@ function incrementValue() {
   const counterText = document.createTextNode(counterValue);
   li.appendChild(b);
   li.appendChild(counterText);
+  if (counterValue % 2 === 0) {
+    li.style.background = "red";
+  } else {
+    li.style.background = "yellow";
+  }
   ul.appendChild(li);
 }
 
